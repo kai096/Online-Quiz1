@@ -1,0 +1,22 @@
+li{
+    list-style: none;
+    font-size: 2rem;
+    margin-left: -4rem;
+    background-color: white;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+@media (max-width:775px ){
+    li{
+        font-size: 1.8rem;
+    }
+}
+a{
+    text-decoration: none;
+    color: rgb(194, 223, 88);
+}
+.buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
