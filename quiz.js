@@ -63,11 +63,19 @@ const MAX_QUESTIONS = 6;
 
 function startQuiz(){
     availableQuiz = [...quiz]
-    console.log(availableQuiz);
+    //console.log(availableQuiz);
     getQuestion()
 }
 function getQuestion(){
-    console.log(Math.floor(Math.random()*6))
+
+    if(availableQuiz == 0){
+        localStorage.setItem('mostRecentScore', score)
+        return window.location.assign("./quiz-end.html")
+    }
+
+    questionCounter++
+    questionCounterText.innerText = questionCounter + "/"+ MAX_QUESTIONS
+    //console.log(Math.floor(Math.random()*6))
     const questionNumber = Math.floor(Math.random()*availableQuiz.length);
     currentQuestion = availableQuiz[questionNumber]
     question.innerText = currentQuestion.question
@@ -75,8 +83,52 @@ function getQuestion(){
     // to display choices (use an array func (forEach()) to display each choice in the choice text)
     choices.forEach(choice => {
         const number = choice.dataset['number'];
+        //console.log()
         choice.innerText = currentQuestion['choice' + number]
-    })
 
+       
+    });
+ //use splice method to not include the current question to the next questions
+        availableQuiz.splice(questionNumber, 1)
 }
+
+    //add classes to the choice selected when clicked, use the same array function (.forEach) to target each of the choice 
+    choices.forEach(choice => {
+        choice.addEventListener('click', (e) => {
+            //console.log('choice has been clicked')
+            const selectedChoice = e.target
+            //console.log(selectedChoice)
+            const selectedAnswer = selectedChoice.dataset['number']
+            //console.log(selectedAnswer, currentQuestion.answer)
+
+            // const classApply = 'correct'
+            // if (selectedAnswer !== currentQuestion.answer) {
+            //     classApply = 'incorrect'
+            //     }
+            //     selectedChoice.parentElement.classList.add(classApply)
+
+            const classApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect'
+
+            selectedChoice.parentElement.classList.add(classApply)
+
+
+        if (classApply == 'correct') {
+            incrmentScore(CORRECT_BONUS)
+        }
+            
+
+           setTimeout(() => {
+            selectedChoice.parentElement.classList.remove(classApply)
+            getQuestion()
+           }, 1000);
+           console.log(classApply)
+        })
+    });
+
+
+    function incrmentScore(num) {
+        score += num
+        scoreText.innerText = score
+    }
+
 startQuiz()

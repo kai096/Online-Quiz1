@@ -35,3 +35,10 @@
     width: 100%;
     cursor: pointer;
 }
+/* class to apply */
+.incorrect{
+    background-color: tomato;
+}
+.correct{
+    background-color: limegreen;
+}
