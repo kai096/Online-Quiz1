@@ -9,11 +9,13 @@ let time = 120;
 var count = setInterval(timer, 1000)
 function timer(){
     time = time-1
-    if(count <= 0){
+    if(time <= 0){
         clearInterval(count);
         location.reload();
+        shuffleCard()
     }
     countDown.innerText = time
+    
 }
 
 function turnOver(e){
@@ -40,11 +42,8 @@ function matchedSet(img1, img2){
         matched++
         matchedText.innerText = matched;
         if (matched == 8) {
-            matched = 0
-            setTimeout(() => {
-                return shuffleCard()
-                
-            }, 1000);
+                shuffleCard()
+                location.reload()
         }
         cardOne.removeEventListener('click', turnOver)
         cardTwo.removeEventListener('click', turnOver)
@@ -81,6 +80,7 @@ function shuffleCard() {
         console.log(imgTag)
         card.addEventListener('click', turnOver)
     })
+    location.reload()
 }
 cards.forEach(card => {
     //console.log(card)
