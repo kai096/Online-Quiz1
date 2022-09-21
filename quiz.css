@@ -42,3 +42,16 @@
 .correct{
     background-color: limegreen;
 }
+@media (max-width: 650px) {
+    p {
+        font-size: 1.8rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+}
+@media (max-width: 550px) {
+    p {
+        font-size: 1.3rem;
+    }
+}

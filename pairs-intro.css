@@ -23,3 +23,68 @@ input{
    font-size: 2rem;
    text-align: center;
 }
+@media (max-width: 426px){
+    h1{
+        font-size: 3rem;
+    }
+    hr{
+        width: 100%;
+        color: #000;
+        border: solid;
+        margin: 0rem 0rem;
+    }
+    ul{
+        margin: 2rem 0rem;
+    }
+    li{
+        list-style: none;
+        margin-left: -3.5rem;
+        font-size: 1.8rem;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons .btn{
+        margin: 1.8rem 0rem;
+    }
+    input{
+        font-size: 2rem;
+        text-align: center;
+        width: 35%;
+    }
+}
+
+@media (max-width: 426px){
+    h1{
+        font-size: 3rem;
+    }
+    hr{
+        width: 100%;
+        color: #000;
+        border: solid;
+        margin: 0rem 0rem;
+    }
+    ul{
+        margin: 2rem 0rem;
+    }
+    li{
+        list-style: none;
+        margin-left: -3.5rem;
+        font-size: 1.8rem;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons .btn{
+        margin: 1.8rem 0rem;
+    }
+    input{
+        font-size: 2rem;
+        text-align: center;
+        width: 35%;
+    }
+}

@@ -33,3 +33,10 @@ body{
     transform: scale(1.1);
     transition: all 0.4s;
 }
+@media (max-width: 320px){
+    .container{
+        padding: rem;
+    }
+    
+}
+
