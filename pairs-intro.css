@@ -23,7 +23,7 @@ input{
    font-size: 2rem;
    text-align: center;
 }
-@media (max-width: 426px){
+@media (max-width: 671px){
     h1{
         font-size: 3rem;
     }
@@ -56,9 +56,10 @@ input{
     }
 }
 
+
 @media (max-width: 426px){
     h1{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     hr{
         width: 100%;
@@ -72,7 +73,7 @@ input{
     li{
         list-style: none;
         margin-left: -3.5rem;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
     .buttons {
         display: flex;
@@ -80,7 +81,40 @@ input{
         align-items: center;
     }
     .buttons .btn{
-        margin: 1.8rem 0rem;
+        margin: 1.2rem 0rem;
+
+    }
+    input{
+        font-size: 2rem;
+        text-align: center;
+        width: 35%;
+    }
+}
+@media (max-width: 376px){
+    h1{
+        font-size: 2rem;
+    }
+    hr{
+        width: 100%;
+        color: #000;
+        border: solid;
+        margin: 0rem 0rem;
+    }
+    ul{
+        margin: 2rem 0rem;
+    }
+    li{
+        list-style: none;
+        margin-left: -3.5rem;
+        font-size: 1.5rem;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons .btn{
+        margin: 1rem 0rem;
     }
     input{
         font-size: 2rem;

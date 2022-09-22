@@ -84,3 +84,124 @@
 .card.flip .front-view{
     transform: rotateY(180deg);
 }
+
+@media (max-width: 645px) {
+    :root{
+        font-size: 55.12%;
+    }
+    .hud{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+    }
+    .hud p{
+        font-size: 1.8rem;
+        text-align: center;
+        
+    }
+    .con1{
+        padding-bottom: 5rem;
+        margin: 2rem, 2rem;
+    }
+    .con2{
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+    .front-view img{
+        width: 85px;
+    }
+    .back-view img{
+        width: 95px;
+    }
+}
+@media (max-width: 590px) {
+    :root{
+        font-size: 40.12%;
+    }
+    .hud{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+    }
+    .hud p{
+        font-size: 1.8rem;
+        text-align: center;
+        
+    }
+    .con1{
+        padding-bottom: 5rem;
+        margin: 2rem, 2rem;
+    }
+    .con2{
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+    .front-view img{
+        width: 55px;
+    }
+    .back-view img{
+        width: 65px;
+    }
+}
+@media (max-width: 378px) {
+    :root{
+        font-size: 35.12%;
+    }
+    .hud{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+    }
+    .hud p{
+        font-size: 1.8rem;
+        text-align: center;
+        
+    }
+    .con1{
+        padding-bottom: 5rem;
+        margin: 2rem, 2rem;
+    }
+    .con2{
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+    .front-view img{
+        width: 55px;
+    }
+    .back-view img{
+        width: 65px;
+    }
+}
+@media (max-width: 325px) {
+    :root{
+        font-size: 32.5.12%;
+    }
+    .hud{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+    }
+    .hud p{
+        font-size: 1.8rem;
+        text-align: center;
+        
+    }
+    .con1{
+        padding-bottom: 5rem;
+        margin: 2rem, 2rem;
+    }
+    .con2{
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+    .front-view img{
+        width: 55px;
+    }
+    .back-view img{
+        width: 65px;
+    }
+}

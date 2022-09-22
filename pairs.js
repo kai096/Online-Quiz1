@@ -2,9 +2,18 @@ const cards = document.querySelectorAll('.card');
 const matchedText = document.getElementById('matched');
 const btn = document.getElementById('btn');
 const countDown = document.getElementById('countDown');
+const bgm = document.getElementById('bgm');
 let cardOne, cardTwo; //falsy value
 let matched = 0;
 let time = 120;
+
+function playAud(){
+    bgm.play();
+}
+function pauseAud(){
+    bgm.pause();
+}
+
 
 var count = setInterval(timer, 1000)
 function timer(){
