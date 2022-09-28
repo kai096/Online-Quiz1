@@ -32,7 +32,7 @@ let quiz = [
         answer:"2"
     },
     {
-        question: "So - we have learned that the Misthios is a products of a difficult past. What exactly happened to them when they were children?",
+        question: "Misthios is a products of a difficult past. What exactly happened to them when they were children?",
         choice1: "They were forced to become soldiers for Sparta.",
         choice2: "Their mother died.",
         choice3: "They were thrown off a cliff.",
