@@ -121,7 +121,7 @@ function getQuestion(){
             selectedChoice.parentElement.classList.remove(classApply)
             getQuestion()
            }, 1000);
-           console.log(classApply)
+           //console.log(classApply)
         })
     });
 
@@ -129,6 +129,7 @@ function getQuestion(){
     function incrmentScore(num) {
         score += num
         scoreText.innerText = score
+        console.log(score)
     }
 
 startQuiz()

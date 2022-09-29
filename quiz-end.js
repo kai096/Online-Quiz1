@@ -1,3 +1,3 @@
 const mostRecentScore = localStorage.getItem("mostRecentScore")
 const yourScore = document.getElementById("yourScore");
-yourScore.innerText = mostRecentScore;
+yourScore.innerText = mostRecentScore + '/' + '60';

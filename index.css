@@ -2,10 +2,27 @@
     font-size: 62.12%;
 }
 body{
-    height: 100vh;
     display: flex;
+    height: 100vh;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+.nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(194, 223, 88);
+    padding: 2rem;
+}
+.nav .nav-items a{
+    margin: 10px;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 1rem;
+
 }
 .container{
     margin: 2rem;
@@ -27,6 +44,7 @@ body{
     font-size: 2rem;
     margin-bottom: 2rem;
     transition: all 0.4s;
+    padding: 0.5rem;
 }
 .btn:hover{
     box-shadow: 0 0.2rem 0.4rem 0.2rem;
@@ -38,5 +56,14 @@ body{
         padding: rem;
     }
     
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(194, 223, 88);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
